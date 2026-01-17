@@ -8,8 +8,8 @@
             "Action": {
                 "PluginId": "RunTools",
                 "DataModel": "Standalone",
-                "Category": "Actions",
-                "ItemId": "Play"
+                "ItemId": "Play",
+                "Category": "Actions"
             },
             "Children": [
                 {
@@ -21,8 +21,8 @@
                             "Action": {
                                 "PluginId": "RunTools",
                                 "DataModel": "Standalone",
-                                "Category": "Actions",
-                                "ItemId": "Play"
+                                "ItemId": "Play",
+                                "Category": "Actions"
                             },
                             "Size": "Small"
                         },
@@ -32,8 +32,8 @@
                             "Action": {
                                 "PluginId": "RunTools",
                                 "DataModel": "Standalone",
-                                "Category": "Actions",
-                                "ItemId": "PlayHere"
+                                "ItemId": "PlayHere",
+                                "Category": "Actions"
                             },
                             "Size": "Small"
                         },
@@ -43,8 +43,8 @@
                             "Action": {
                                 "PluginId": "RunTools",
                                 "DataModel": "Standalone",
-                                "ItemId": "Run",
-                                "Category": "Actions"
+                                "Category": "Actions",
+                                "ItemId": "Run"
                             },
                             "Size": "Small"
                         }
@@ -59,20 +59,20 @@
             "Action": {
                 "PluginId": "RunTools",
                 "DataModel": "Standalone",
-                "Category": "Actions",
-                "ItemId": "ToggleDM"
+                "ItemId": "ToggleDM",
+                "Category": "Actions"
             }
         },
         {
             "Id": "PauseMode_TestAndTestHere_TestTab",
             "Type": "SplitButton",
+            "ShowSettingOptions": true,
             "Setting": {
                 "PluginId": "RunTools",
                 "DataModel": "Standalone",
-                "Category": "Settings",
-                "ItemId": "PauseMode"
-            },
-            "ShowSettingOptions": true
+                "ItemId": "PauseMode",
+                "Category": "Settings"
+            }
         },
         {
             "Id": "cf564ad1-8ad9-4667-a782-b59c43d4d40c",
@@ -80,8 +80,8 @@
             "Action": {
                 "PluginId": "RunTools",
                 "DataModel": "Standalone",
-                "ItemId": "ResumePhysicsAll",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "ResumePhysicsAll"
             }
         },
         {
@@ -90,8 +90,8 @@
             "Action": {
                 "PluginId": "RunTools",
                 "DataModel": "Standalone",
-                "Category": "Actions",
-                "ItemId": "StepForwardPhysicsAll"
+                "ItemId": "StepForwardPhysicsAll",
+                "Category": "Actions"
             }
         },
         {
@@ -100,13 +100,13 @@
             "Action": {
                 "PluginId": "RunTools",
                 "DataModel": "Standalone",
-                "ItemId": "Stop",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "Stop"
             }
         },
         {
-            "Type": "Separator",
-            "Size": "Large"
+            "Size": "Large",
+            "Type": "Separator"
         },
         {
             "Id": "f5be82c2-c3e9-4970-9fe7-1df983b6a1d7",
@@ -114,8 +114,8 @@
             "Action": {
                 "PluginId": "RunTools",
                 "DataModel": "Standalone",
-                "Category": "Actions",
-                "ItemId": "TeamTest"
+                "ItemId": "TeamTest",
+                "Category": "Actions"
             }
         },
         {
@@ -124,13 +124,13 @@
             "Action": {
                 "PluginId": "RunTools",
                 "DataModel": "Standalone",
-                "ItemId": "CleanupTeamTest",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "CleanupTeamTest"
             }
         },
         {
-            "Type": "Separator",
-            "Size": "Large"
+            "Size": "Large",
+            "Type": "Separator"
         },
         {
             "Id": "709e7d8a-3e3a-4985-baea-d2803327d39d",
@@ -138,8 +138,8 @@
             "Action": {
                 "PluginId": "RunTools",
                 "DataModel": "Standalone",
-                "ItemId": "ServerAndClients",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "ServerAndClients"
             }
         },
         {
@@ -149,8 +149,8 @@
             "Action": {
                 "PluginId": "RunTools",
                 "DataModel": "Standalone",
-                "ItemId": "ExitClient",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "ExitClient"
             }
         },
         {
@@ -161,13 +161,13 @@
                             "IsShort": false,
                             "Type": "Spinbox",
                             "Text": "Players",
+                            "Id": "AddPlayer_ServerAndClients",
                             "Setting": {
                                 "PluginId": "RunTools",
                                 "DataModel": "Standalone",
-                                "ItemId": "AddPlayer",
-                                "Category": "Settings"
-                            },
-                            "Id": "AddPlayer_ServerAndClients"
+                                "Category": "Settings",
+                                "ItemId": "AddPlayer"
+                            }
                         },
                         {
                             "Type": "Button",
@@ -175,13 +175,13 @@
                             "Action": {
                                 "PluginId": "RunTools",
                                 "DataModel": "Standalone",
-                                "ItemId": "AddClients",
-                                "Category": "Actions"
+                                "Category": "Actions",
+                                "ItemId": "AddClients"
                             },
-                            "Text": "Clients",
-                            "Style": "Primary",
+                            "Id": "AddClients_ServerAndClients",
                             "TextOnly": true,
-                            "Id": "AddClients_ServerAndClients"
+                            "Style": "Primary",
+                            "Text": "Clients"
                         }
                     ],
                     "Type": "Row"
@@ -191,8 +191,8 @@
             "Setting": {
                 "PluginId": "RunTools",
                 "DataModel": "Standalone",
-                "ItemId": "AddClients",
-                "Category": "Settings"
+                "Category": "Settings",
+                "ItemId": "AddClients"
             },
             "Id": "AddClients_ServerAndClients",
             "Type": "SplitButton",
@@ -206,8 +206,8 @@
                     "Setting": {
                         "PluginId": "RunTools",
                         "DataModel": "Standalone",
-                        "ItemId": "PlayersMode",
-                        "Category": "Settings"
+                        "Category": "Settings",
+                        "ItemId": "PlayersMode"
                     }
                 },
                 {
@@ -216,8 +216,8 @@
                     "Setting": {
                         "PluginId": "RunTools",
                         "DataModel": "Standalone",
-                        "ItemId": "AddPlayer",
-                        "Category": "Settings"
+                        "Category": "Settings",
+                        "ItemId": "AddPlayer"
                     },
                     "Size": "Small"
                 }
@@ -230,13 +230,13 @@
             "Action": {
                 "PluginId": "RunTools",
                 "DataModel": "Standalone",
-                "Category": "Actions",
-                "ItemId": "CleanupServerAndClients"
+                "ItemId": "CleanupServerAndClients",
+                "Category": "Actions"
             }
         },
         {
-            "Type": "Separator",
-            "Size": "Large"
+            "Size": "Large",
+            "Type": "Separator"
         },
         {
             "Id": "1f3aa81b-42ee-40fb-adc2-331f1c5272fa",
@@ -244,8 +244,8 @@
             "Action": {
                 "PluginId": "DeviceEmulation",
                 "DataModel": "Standalone",
-                "ItemId": "Toggle",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "Toggle"
             }
         },
         {
@@ -254,8 +254,8 @@
             "Action": {
                 "PluginId": "ControlsEmulator",
                 "DataModel": "Standalone",
-                "Category": "Actions",
-                "ItemId": "Toggle"
+                "ItemId": "Toggle",
+                "Category": "Actions"
             }
         },
         {
@@ -264,13 +264,13 @@
             "Action": {
                 "PluginId": "PlayerEmulation",
                 "DataModel": "Standalone",
-                "ItemId": "Toggle",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "Toggle"
             }
         },
         {
-            "Type": "Separator",
-            "Size": "Large"
+            "Size": "Large",
+            "Type": "Separator"
         },
         {
             "Id": "b7fb10c7-9f8e-4bd2-a03c-683c37042a3d",
@@ -278,8 +278,8 @@
             "Action": {
                 "PluginId": "AppConfiguration",
                 "DataModel": "Standalone",
-                "ItemId": "ToggleAudio",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "ToggleAudio"
             }
         }
     ]

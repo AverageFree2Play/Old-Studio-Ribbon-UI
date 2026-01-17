@@ -118,14 +118,14 @@
                     "Children": [
                         {
                             "IconOnly": false,
+                            "Type": "Checkbox",
+                            "Id": "MoveGrid",
                             "Setting": {
                                 "PluginId": "BuilderTools",
                                 "DataModel": "Standalone",
                                 "Category": "Settings",
                                 "ItemId": "MoveGrid"
                             },
-                            "Id": "MoveGrid",
-                            "Type": "Checkbox",
                             "Size": "Small"
                         },
                         {
@@ -145,14 +145,14 @@
                     "Children": [
                         {
                             "IconOnly": false,
+                            "Type": "Checkbox",
+                            "Id": "RotateGrid",
                             "Setting": {
                                 "PluginId": "BuilderTools",
                                 "DataModel": "Standalone",
                                 "Category": "Settings",
                                 "ItemId": "RotateGrid"
                             },
-                            "Id": "RotateGrid",
-                            "Type": "Checkbox",
                             "Size": "Small"
                         },
                         {
@@ -284,16 +284,58 @@
         {
             "Children": [
                 {
+                    "Children": [
+                        {
+                            "Children": [
+                                {
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "GroupAsModel",
+                                        "Category": "Actions"
+                                    },
+                                    "Id": "b6539bb8-0fa2-426b-97e4-2ff81cbe1226",
+                                    "Text": "Group As a Model",
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "GroupAsFolder",
+                                        "Category": "Actions"
+                                    },
+                                    "Id": "148e5a15-7923-4e4b-9f75-30b30cec5b66",
+                                    "Text": "Group As a Folder",
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "523fff98-a147-4204-be90-2e22049983f6",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "Category": "Actions",
+                                        "ItemId": "Ungroup"
+                                    },
+                                    "Size": "Small"
+                                }
+                            ],
+                            "Type": "Column"
+                        }
+                    ],
                     "IconOnly": true,
-                    "Setting": {
+                    "Type": "SplitButton",
+                    "Action": {
                         "PluginId": "BuilderTools",
                         "DataModel": "Standalone",
-                        "ItemId": "Group",
-                        "Category": "Settings"
+                        "ItemId": "GroupAsModel",
+                        "Category": "Actions"
                     },
-                    "Id": "Group",
-                    "Type": "SplitButton",
-                    "ShowSettingOptions": true,
+                    "Id": "0ac9e08d-0b65-4d34-a3d8-b380cc499bc1",
+                    "Text": "Group",
                     "Size": "Small"
                 },
                 {
@@ -301,12 +343,8 @@
                         {
                             "Children": [
                                 {
-                                    "Setting": {
-                                        "PluginId": "BuilderTools",
-                                        "DataModel": "Standalone",
-                                        "ItemId": "LockMode",
-                                        "Category": "Settings"
-                                    },
+                                    "Type": "RibbonToggle",
+                                    "TextKey": "LockToolRibbonAction",
                                     "ActionOnToggle": {
                                         "PluginId": "BuilderTools",
                                         "DataModel": "Standalone",
@@ -314,22 +352,37 @@
                                         "Category": "Actions"
                                     },
                                     "Id": "LockMode",
-                                    "TextKey": "LockToolRibbonAction",
-                                    "Type": "RibbonToggle"
+                                    "Setting": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "LockMode",
+                                        "Category": "Settings"
+                                    }
+                                },
+                                {
+                                    "Id": "ce6f0b27-af88-415a-8998-900fac71385f",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "UnlockAll",
+                                        "Category": "Actions"
+                                    },
+                                    "Size": "Small"
                                 }
                             ],
-                            "Type": "Row"
+                            "Type": "Column"
                         }
                     ],
                     "IconOnly": true,
-                    "Type": "SplitButton",
-                    "Id": "Lock",
                     "Setting": {
                         "PluginId": "BuilderTools",
                         "DataModel": "Standalone",
                         "ItemId": "LockMode",
                         "Category": "Settings"
                     },
+                    "Id": "Lock",
+                    "Type": "SplitButton",
                     "Size": "Small"
                 }
             ],
@@ -340,41 +393,36 @@
                 {
                     "Children": [
                         {
-                            "Children": [
-                                {
-                                    "Setting": {
-                                        "PluginId": "BuilderTools",
-                                        "DataModel": "Standalone",
-                                        "ItemId": "AnchorMode",
-                                        "Category": "Settings"
-                                    },
-                                    "ActionOnToggle": {
-                                        "PluginId": "BuilderTools",
-                                        "DataModel": "Standalone",
-                                        "ItemId": "AnchorTool",
-                                        "Category": "Actions"
-                                    },
-                                    "Id": "AnchorMode",
-                                    "TextKey": "AnchorToolRibbonAction",
-                                    "Type": "RibbonToggle"
-                                }
-                            ],
-                            "Type": "Row"
+                            "Type": "RibbonToggle",
+                            "TextKey": "AnchorToolRibbonAction",
+                            "ActionOnToggle": {
+                                "PluginId": "BuilderTools",
+                                "DataModel": "Standalone",
+                                "ItemId": "AnchorTool",
+                                "Category": "Actions"
+                            },
+                            "Id": "AnchorMode",
+                            "Setting": {
+                                "PluginId": "BuilderTools",
+                                "DataModel": "Standalone",
+                                "ItemId": "AnchorMode",
+                                "Category": "Settings"
+                            }
                         }
                     ],
-                    "IconOnly": false,
-                    "Type": "SplitButton",
-                    "Id": "Anchor",
-                    "Setting": {
-                        "PluginId": "BuilderTools",
-                        "DataModel": "Standalone",
-                        "ItemId": "AnchorMode",
-                        "Category": "Settings"
-                    },
-                    "Size": "Small"
+                    "Type": "Row"
                 }
             ],
-            "Type": "Column"
+            "IconOnly": false,
+            "Setting": {
+                "PluginId": "BuilderTools",
+                "DataModel": "Standalone",
+                "ItemId": "AnchorMode",
+                "Category": "Settings"
+            },
+            "Id": "Anchor",
+            "Type": "SplitButton",
+            "Size": "Small"
         },
         {
             "Size": "Large",
@@ -425,41 +473,269 @@
             "Type": "Separator"
         },
         {
-            "Setting": {
-                "PluginId": "BuilderTools",
-                "DataModel": "Standalone",
-                "Category": "Settings",
-                "ItemId": "ConstraintType"
-            },
-            "Type": "SplitButton",
-            "Id": "Constraint",
-            "Rows":9,
-            "ShowSettingOptions": true,
             "Text": "Create",
+            "ShowSettingOptions": false,
+            "Action": {
+                "PluginId": "Constraints",
+                "DataModel": "Standalone",
+                "ItemId": "DEPRECATED_DrawOnTop",
+                "Category": "Actions"
+            },
+            "Id": "Constraint",
             "Children": [
                 {
-                    "Id": "00e8168d-da56-43b7-bf52-1311547e3828",
-                    "Type": "Button",
-                    "Action": {
-                        "PluginId": "BuilderTools",
-                        "DataModel": "Standalone",
-                        "ItemId": "Insert/ConstraintAttachment",
-                        "Category": "Actions"
-                    }
+                    "Children": [
+                        {
+                            "Children": [
+                                {
+                                    "Id": "86aab306-0da8-4651-b4a6-999ba1b55016",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "Insert/ConstraintRigid",
+                                        "Category": "Actions"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "6429bbcc-962a-4740-b338-da87e7e6ea1d",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "Insert/ConstraintBallInSocket",
+                                        "Category": "Actions"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "88478e28-f7b0-4610-9558-703fe39c0700",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "Category": "Actions",
+                                        "ItemId": "Insert/ConstraintHinge"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "a45dfd7a-02a6-43ba-88f8-af4132375aad",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "Insert/ConstraintPrismatic",
+                                        "Category": "Actions"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "d3aaf76e-44b2-484c-93a7-c1b3a25d26cb",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "Category": "Actions",
+                                        "ItemId": "Insert/ConstraintCylindrical"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "f20d4cbb-fdf6-407c-aacc-f9801a6a281f",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "Insert/ConstraintUniversal",
+                                        "Category": "Actions"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "265449ec-7cd2-4eea-9f5b-dd9b2649f332",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "Category": "Actions",
+                                        "ItemId": "Insert/ConstraintPlane"
+                                    },
+                                    "Size": "Small"
+                                }
+                            ],
+                            "Type": "Column"
+                        },
+                        {
+                            "Children": [
+                                {
+                                    "Id": "7dc56842-7724-415b-98cb-6ec519fd6f29",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "Insert/ConstraintAlignOrientation",
+                                        "Category": "Actions"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "deac99f7-0dd1-4d32-9ed2-205402c7b859",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "Category": "Actions",
+                                        "ItemId": "Insert/ConstraintAlignPosition"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "2d66177e-c9e9-4f18-90f3-f84b3eae3da6",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "Insert/ConstraintVectorForce",
+                                        "Category": "Actions"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "20b237da-91e9-4b5a-8224-7c0756dd7435",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "Category": "Actions",
+                                        "ItemId": "Insert/ConstraintLineForce"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "e1aa6b9a-66a1-4624-ac5e-a53b05e53303",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "Insert/ConstraintTorque",
+                                        "Category": "Actions"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "92240edd-224a-4e05-b763-3217df442bd1",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "Category": "Actions",
+                                        "ItemId": "Insert/ConstraintAngularVelocity"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "0fd796d4-21c9-49dc-9f66-7980cdb9c06c",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "Insert/ConstraintLinearVelocity",
+                                        "Category": "Actions"
+                                    },
+                                    "Size": "Small"
+                                }
+                            ],
+                            "Type": "Column"
+                        },
+                        {
+                            "Children": [
+                                {
+                                    "Id": "d28b87a1-7f3b-4bb0-8e78-eb3621cac78c",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "Insert/ConstraintRope",
+                                        "Category": "Actions"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "3fc651e6-d71b-4eec-b408-3b6f29c6604c",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "Insert/ConstraintRod",
+                                        "Category": "Actions"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "c9e94caf-089b-43e6-83b8-07fdf5664c12",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "Category": "Actions",
+                                        "ItemId": "Insert/ConstraintSpring"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "a8d7aa85-b214-4152-846c-e7b8f4a1b592",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "Insert/ConstraintTorsionSpring",
+                                        "Category": "Actions"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "457442d0-c0c1-4b44-99d2-733d9303e9f2",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "Category": "Actions",
+                                        "ItemId": "Insert/ConstraintWeld"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "9a137a20-2db7-4ed3-8306-16c3828dcccb",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "Insert/ConstraintNoCollision",
+                                        "Category": "Actions"
+                                    },
+                                    "Size": "Small"
+                                },
+                                {
+                                    "Id": "ead7b1a3-e2f0-4780-bdcd-4a98e2a8d248",
+                                    "Type": "Button",
+                                    "Action": {
+                                        "PluginId": "BuilderTools",
+                                        "DataModel": "Standalone",
+                                        "ItemId": "Insert/ConstraintAttachment",
+                                        "Category": "Actions"
+                                    },
+                                    "Size": "Small"
+                                }
+                            ],
+                            "Type": "Column"
+                        }
+                    ],
+                    "Type": "Row"
                 }
-            ]
-        },
-        {
-            "Type": "SplitButton",
-            "FastFlag": "DivideConstraintSettings",
-            "Id": "Weld",
-            "ShowSettingOptions": true,
-            "Setting": {
-                "PluginId": "BuilderTools",
-                "DataModel": "Standalone",
-                "Category": "Settings",
-                "ItemId": "WeldType"
-            }
+            ],
+            "Type": "SplitButton"
         },
         {
             "Children": [
@@ -494,15 +770,16 @@
             "Type": "Separator"
         },
         {
-            "Id": "Effect",
-            "Type": "SplitButton",
             "Setting": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
                 "Category": "Settings",
                 "ItemId": "EffectType"
             },
-            "ShowSettingOptions": true
+            "Id": "Effect",
+            "ShowSettingOptions": true,
+            "Text": "Effects",
+            "Type": "SplitButton"
         },
         {
             "Type": "Separator",
@@ -510,16 +787,16 @@
             "Size": "Large"
         },
         {
-            "Type": "SplitButton",
-            "FastFlag": "DivideConstraintSettings",
-            "Id": "Attachment",
-            "ShowSettingOptions": true,
             "Setting": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
                 "Category": "Settings",
                 "ItemId": "AttachmentType"
-            }
+            },
+            "FastFlag": "DivideConstraintSettings",
+            "Id": "Attachment",
+            "ShowSettingOptions": true,
+            "Type": "SplitButton"
         },
         {
             "Id": "d8d83eee-c991-4564-9851-e81b866f8463",

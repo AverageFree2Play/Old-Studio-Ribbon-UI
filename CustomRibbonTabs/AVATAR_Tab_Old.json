@@ -8,8 +8,8 @@
             "Action": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "ItemId": "Select",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "Select"
             }
         },
         {
@@ -18,8 +18,8 @@
             "Action": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "Category": "Actions",
-                "ItemId": "Move"
+                "ItemId": "Move",
+                "Category": "Actions"
             }
         },
         {
@@ -28,8 +28,8 @@
             "Action": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "ItemId": "Scale",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "Scale"
             }
         },
         {
@@ -38,8 +38,8 @@
             "Action": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "Category": "Actions",
-                "ItemId": "Rotate"
+                "ItemId": "Rotate",
+                "Category": "Actions"
             }
         },
         {
@@ -48,8 +48,8 @@
             "Action": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "ItemId": "Transform",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "Transform"
             }
         },
         {
@@ -61,8 +61,8 @@
                     "Setting": {
                         "PluginId": "BuilderTools",
                         "DataModel": "Standalone",
-                        "ItemId": "DraggerMode",
-                        "Category": "Settings"
+                        "Category": "Settings",
+                        "ItemId": "DraggerMode"
                     }
                 },
                 {
@@ -71,8 +71,8 @@
                     "Setting": {
                         "PluginId": "BuilderTools",
                         "DataModel": "Standalone",
-                        "ItemId": "SnapToParts",
-                        "Category": "Settings"
+                        "Category": "Settings",
+                        "ItemId": "SnapToParts"
                     },
                     "Size": "Small"
                 }
@@ -80,8 +80,8 @@
             "Tags": "SpacingMedium"
         },
         {
-            "Type": "Separator",
-            "Size": "Large"
+            "Size": "Large",
+            "Type": "Separator"
         },
         {
             "Type": "Column",
@@ -92,8 +92,8 @@
                     "Setting": {
                         "PluginId": "BuilderTools",
                         "DataModel": "Standalone",
-                        "ItemId": "Collisions",
-                        "Category": "Settings"
+                        "Category": "Settings",
+                        "ItemId": "Collisions"
                     },
                     "Size": "Small"
                 },
@@ -103,8 +103,8 @@
                     "Setting": {
                         "PluginId": "BuilderTools",
                         "DataModel": "Standalone",
-                        "ItemId": "JoinSurfaces",
-                        "Category": "Settings"
+                        "Category": "Settings",
+                        "ItemId": "JoinSurfaces"
                     },
                     "Size": "Small"
                 }
@@ -121,8 +121,8 @@
                             "Setting": {
                                 "PluginId": "BuilderTools",
                                 "DataModel": "Standalone",
-                                "ItemId": "MoveGrid",
-                                "Category": "Settings"
+                                "Category": "Settings",
+                                "ItemId": "MoveGrid"
                             },
                             "Id": "MoveGrid",
                             "Type": "Checkbox",
@@ -134,8 +134,8 @@
                             "Setting": {
                                 "PluginId": "BuilderTools",
                                 "DataModel": "Standalone",
-                                "ItemId": "MoveGridSize",
-                                "Category": "Settings"
+                                "Category": "Settings",
+                                "ItemId": "MoveGridSize"
                             }
                         }
                     ],
@@ -148,8 +148,8 @@
                             "Setting": {
                                 "PluginId": "BuilderTools",
                                 "DataModel": "Standalone",
-                                "ItemId": "RotateGrid",
-                                "Category": "Settings"
+                                "Category": "Settings",
+                                "ItemId": "RotateGrid"
                             },
                             "Id": "RotateGrid",
                             "Type": "Checkbox",
@@ -161,8 +161,8 @@
                             "Setting": {
                                 "PluginId": "BuilderTools",
                                 "DataModel": "Standalone",
-                                "ItemId": "RotateGridSize",
-                                "Category": "Settings"
+                                "Category": "Settings",
+                                "ItemId": "RotateGridSize"
                             }
                         }
                     ],
@@ -172,8 +172,8 @@
             "Tags": "ConvertibleToColumn"
         },
         {
-            "Type": "Separator",
-            "Size": "Large"
+            "Size": "Large",
+            "Type": "Separator"
         },
         {
             "Id": "0544845f-c13b-427e-8ac4-130c5220cf35",
@@ -181,8 +181,8 @@
             "Action": {
                 "PluginId": "AccessoryFittingTool",
                 "DataModel": "Standalone",
-                "Category": "Actions",
-                "ItemId": "Toggle"
+                "ItemId": "Toggle",
+                "Category": "Actions"
             },
             "Text": "Fitting"
         },
@@ -192,49 +192,20 @@
             "Action": {
                 "PluginId": "AccessoryFittingTool",
                 "DataModel": "Standalone",
-                "ItemId": "Create",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "Create"
             },
             "Text": "Accessory"
         },
         {
-            "Type": "Separator",
-            "Size": "Large"
+            "Size": "Large",
+            "Type": "Separator"
         },
         {
             "Id": "780d3c8a-3d67-4573-a5ea-a94b5b1a2780",
             "Type": "IconButton",
             "Action": {
                 "PluginId": "MeshImporter",
-                "DataModel": "Standalone",
-                "ItemId": "Toggle",
-                "Category": "Actions"
-            }
-        },
-        {
-            "Type": "Separator",
-            "Size": "Large"
-        },
-        {
-            "Id": "67b7bc9d-ea75-4051-9771-819578dafb46",
-            "Type": "IconButton",
-            "Action": {
-                "PluginId": "Character",
-                "DataModel": "Standalone",
-                "ItemId": "Toggle",
-                "Category": "Actions"
-            },
-            "Text": "Rig Builder"
-        },
-        {
-            "Type": "Separator",
-            "Size": "Large"
-        },
-        {
-            "Id": "a69a4d21-df37-4a66-b791-088d61a9c651",
-            "Type": "IconButton",
-            "Action": {
-                "PluginId": "AvatarSetup",
                 "DataModel": "Standalone",
                 "Category": "Actions",
                 "ItemId": "Toggle"
@@ -245,10 +216,25 @@
             "Type": "Separator"
         },
         {
-            "Id": "c770c382-9fcf-4e17-8f41-a53d5c03023d",
+            "Id": "67b7bc9d-ea75-4051-9771-819578dafb46",
             "Type": "IconButton",
             "Action": {
-                "PluginId": "AvatarSettings",
+                "PluginId": "Character",
+                "DataModel": "Standalone",
+                "Category": "Actions",
+                "ItemId": "Toggle"
+            },
+            "Text": "Rig Builder"
+        },
+        {
+            "Size": "Large",
+            "Type": "Separator"
+        },
+        {
+            "Id": "a69a4d21-df37-4a66-b791-088d61a9c651",
+            "Type": "IconButton",
+            "Action": {
+                "PluginId": "AvatarSetup",
                 "DataModel": "Standalone",
                 "ItemId": "Toggle",
                 "Category": "Actions"
@@ -259,13 +245,27 @@
             "Size": "Large"
         },
         {
+            "Id": "c770c382-9fcf-4e17-8f41-a53d5c03023d",
+            "Type": "IconButton",
+            "Action": {
+                "PluginId": "AvatarSettings",
+                "DataModel": "Standalone",
+                "Category": "Actions",
+                "ItemId": "Toggle"
+            }
+        },
+        {
+            "Size": "Large",
+            "Type": "Separator"
+        },
+        {
             "Id": "d40174fa-ce50-432f-ae57-6ed4f2a0a499",
             "Type": "IconButton",
             "Action": {
                 "PluginId": "AnimationEditor",
                 "DataModel": "Standalone",
-                "ItemId": "Toggle",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "Toggle"
             }
         }
     ]

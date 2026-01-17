@@ -5,28 +5,28 @@
         {
             "Id": "GUI",
             "Type": "SplitButton",
-            "Setting": {
-                "PluginId": "BuilderTools",
-                "DataModel": "Standalone",
-                "Category": "Settings",
-                "ItemId": "InsertGui"
-            },
-            "ShowSettingOptions": true
-        },
-        {
-            "Type": "Separator",
-            "Size": "Large"
-        },
-        {
-            "Id": "Frame",
-            "Type": "SplitButton",
             "ShowSettingOptions": true,
             "Setting": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "ItemId": "InsertUIFrame",
+                "ItemId": "InsertGui",
                 "Category": "Settings"
             }
+        },
+        {
+            "Size": "Large",
+            "Type": "Separator"
+        },
+        {
+            "Id": "Frame",
+            "Type": "SplitButton",
+            "Setting": {
+                "PluginId": "BuilderTools",
+                "DataModel": "Standalone",
+                "Category": "Settings",
+                "ItemId": "InsertUIFrame"
+            },
+            "ShowSettingOptions": true
         },
         {
             "Id": "864d079f-84de-4ad2-8995-966bbf9eb8f8",
@@ -34,8 +34,8 @@
             "Action": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "Category": "Actions",
-                "ItemId": "Insert/ScrollingFrame"
+                "ItemId": "Insert/ScrollingFrame",
+                "Category": "Actions"
             }
         },
         {
@@ -44,8 +44,8 @@
             "Action": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "ItemId": "Insert/TextLabel",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "Insert/TextLabel"
             }
         },
         {
@@ -54,8 +54,8 @@
             "Action": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "Category": "Actions",
-                "ItemId": "Insert/TextButton"
+                "ItemId": "Insert/TextButton",
+                "Category": "Actions"
             }
         },
         {
@@ -64,35 +64,35 @@
             "Action": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "ItemId": "Insert/TextBox",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "Insert/TextBox"
             }
         },
         {
             "Id": "Input",
             "Type": "SplitButton",
-            "ShowSettingOptions": true,
             "Setting": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "ItemId": "InsertUIInput",
-                "Category": "Settings"
-            }
+                "Category": "Settings",
+                "ItemId": "InsertUIInput"
+            },
+            "ShowSettingOptions": true
         },
         {
             "Id": "Label",
             "Type": "SplitButton",
-            "ShowSettingOptions": true,
             "Setting": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "ItemId": "InsertUILabel",
-                "Category": "Settings"
-            }
+                "Category": "Settings",
+                "ItemId": "InsertUILabel"
+            },
+            "ShowSettingOptions": true
         },
         {
-            "Size": "Large",
-            "Type": "Separator"
+            "Type": "Separator",
+            "Size": "Large"
         },
         {
             "Id": "ce30da2d-0821-43df-9103-3cde299adafb",
@@ -100,46 +100,46 @@
             "Action": {
                 "PluginId": "StyleEditor",
                 "DataModel": "Standalone",
-                "ItemId": "Toggle",
-                "Category": "Actions"
+                "Category": "Actions",
+                "ItemId": "Toggle"
             }
         },
         {
-            "Size": "Large",
-            "Type": "Separator"
+            "Type": "Separator",
+            "Size": "Large"
         },
         {
             "Id": "Appearance",
             "Type": "SplitButton",
-            "ShowSettingOptions": true,
             "Setting": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "ItemId": "InsertUIAppearance",
-                "Category": "Settings"
-            }
+                "Category": "Settings",
+                "ItemId": "InsertUIAppearance"
+            },
+            "ShowSettingOptions": true
         },
         {
             "Id": "Layout",
             "Type": "SplitButton",
-            "ShowSettingOptions": true,
             "Setting": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "ItemId": "InsertUILayout",
-                "Category": "Settings"
-            }
+                "Category": "Settings",
+                "ItemId": "InsertUILayout"
+            },
+            "ShowSettingOptions": true
         },
         {
             "Id": "Constraint",
             "Type": "SplitButton",
-            "ShowSettingOptions": true,
             "Setting": {
                 "PluginId": "BuilderTools",
                 "DataModel": "Standalone",
-                "ItemId": "InsertUIConstraint",
-                "Category": "Settings"
-            }
+                "Category": "Settings",
+                "ItemId": "InsertUIConstraint"
+            },
+            "ShowSettingOptions": true
         }
     ]
 }
