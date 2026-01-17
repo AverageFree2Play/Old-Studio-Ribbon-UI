@@ -1,0 +1,145 @@
+{
+    "_comment": "Originally made by @TenebrisNoctua. Modified by @Average_FreeTooPlay",
+    "Name": "UI",
+    "Controls": [
+        {
+            "Id": "GUI",
+            "Type": "SplitButton",
+            "Setting": {
+                "PluginId": "BuilderTools",
+                "DataModel": "Standalone",
+                "Category": "Settings",
+                "ItemId": "InsertGui"
+            },
+            "ShowSettingOptions": true
+        },
+        {
+            "Type": "Separator",
+            "Size": "Large"
+        },
+        {
+            "Id": "Frame",
+            "Type": "SplitButton",
+            "ShowSettingOptions": true,
+            "Setting": {
+                "PluginId": "BuilderTools",
+                "DataModel": "Standalone",
+                "ItemId": "InsertUIFrame",
+                "Category": "Settings"
+            }
+        },
+        {
+            "Id": "864d079f-84de-4ad2-8995-966bbf9eb8f8",
+            "Type": "IconButton",
+            "Action": {
+                "PluginId": "BuilderTools",
+                "DataModel": "Standalone",
+                "Category": "Actions",
+                "ItemId": "Insert/ScrollingFrame"
+            }
+        },
+        {
+            "Id": "2eb09fc8-6f45-42cf-92ac-de8c964ca8bf",
+            "Type": "IconButton",
+            "Action": {
+                "PluginId": "BuilderTools",
+                "DataModel": "Standalone",
+                "ItemId": "Insert/TextLabel",
+                "Category": "Actions"
+            }
+        },
+        {
+            "Id": "8a7c9283-420b-4fec-a9a9-1a3bedc6ed67",
+            "Type": "IconButton",
+            "Action": {
+                "PluginId": "BuilderTools",
+                "DataModel": "Standalone",
+                "Category": "Actions",
+                "ItemId": "Insert/TextButton"
+            }
+        },
+        {
+            "Id": "1cf6419e-55f3-4d10-a7f4-f10989c0e1e0",
+            "Type": "IconButton",
+            "Action": {
+                "PluginId": "BuilderTools",
+                "DataModel": "Standalone",
+                "ItemId": "Insert/TextBox",
+                "Category": "Actions"
+            }
+        },
+        {
+            "Id": "Input",
+            "Type": "SplitButton",
+            "ShowSettingOptions": true,
+            "Setting": {
+                "PluginId": "BuilderTools",
+                "DataModel": "Standalone",
+                "ItemId": "InsertUIInput",
+                "Category": "Settings"
+            }
+        },
+        {
+            "Id": "Label",
+            "Type": "SplitButton",
+            "ShowSettingOptions": true,
+            "Setting": {
+                "PluginId": "BuilderTools",
+                "DataModel": "Standalone",
+                "ItemId": "InsertUILabel",
+                "Category": "Settings"
+            }
+        },
+        {
+            "Size": "Large",
+            "Type": "Separator"
+        },
+        {
+            "Id": "ce30da2d-0821-43df-9103-3cde299adafb",
+            "Type": "IconButton",
+            "Action": {
+                "PluginId": "StyleEditor",
+                "DataModel": "Standalone",
+                "ItemId": "Toggle",
+                "Category": "Actions"
+            }
+        },
+        {
+            "Size": "Large",
+            "Type": "Separator"
+        },
+        {
+            "Id": "Appearance",
+            "Type": "SplitButton",
+            "ShowSettingOptions": true,
+            "Setting": {
+                "PluginId": "BuilderTools",
+                "DataModel": "Standalone",
+                "ItemId": "InsertUIAppearance",
+                "Category": "Settings"
+            }
+        },
+        {
+            "Id": "Layout",
+            "Type": "SplitButton",
+            "ShowSettingOptions": true,
+            "Setting": {
+                "PluginId": "BuilderTools",
+                "DataModel": "Standalone",
+                "ItemId": "InsertUILayout",
+                "Category": "Settings"
+            }
+        },
+        {
+            "Id": "Constraint",
+            "Type": "SplitButton",
+            "ShowSettingOptions": true,
+            "Setting": {
+                "PluginId": "BuilderTools",
+                "DataModel": "Standalone",
+                "ItemId": "InsertUIConstraint",
+                "Category": "Settings"
+            }
+        }
+    ]
+}
