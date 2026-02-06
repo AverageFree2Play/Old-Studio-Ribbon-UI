@@ -2,6 +2,7 @@
 These are custom Next Gen Studio ribbon UI tabs designed to look like the original ribbon tab prior to the forced next gen studio ui update.
 
 This is a fork of TenebrisNoctua's OldRibbonTabs: https://github.com/TenebrisNoctua/RibbonTools/tree/main/OldRibbonTabs
+Original DevForum post: https://devforum.roblox.com/t/old-ribbon-style-ui-for-next-gen-studio-ribbon-ui-update/4260765
 
 # Installation
 1. Locate your CustomRibbonTabs folder. It should be in `%LOCALAPPDATA%\Roblox\<user-id>\CustomRibbonTabs`. If you're on MacOS: `~/Documents/Roblox/<userID>/CustomRibbonTabs`
@@ -12,3 +13,4 @@ This is a fork of TenebrisNoctua's OldRibbonTabs: https://github.com/TenebrisNoc
 This is based of the Dec 11 build of Roblox Studio. With the FFlag: `FFlagEnableRibbonPlugin3` still functional.
 
 This is not 100% guranteed accurate. As some features are left undocumented or missing. However, I did try my best at replicating.
+
