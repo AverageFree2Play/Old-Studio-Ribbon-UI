@@ -478,7 +478,7 @@
             "Action": {
                 "PluginId": "Constraints",
                 "DataModel": "Standalone",
-                "ItemId": "DEPRECATED_DrawOnTop",
+                "ItemId": "ShowDetails",
                 "Category": "Actions"
             },
             "Id": "Constraint",
